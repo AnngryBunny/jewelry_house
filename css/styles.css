@@ -1,44 +1,6 @@
-@font-face {
-  font-family: "Raleway Bold";
-  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Raleway Italic";
-  src: url("../fonts/Raleway-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Raleway Light";
-  src: url("../fonts/Raleway-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto Bold";
-  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto Italic";
-  src: url("../fonts/Roboto-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto Light";
-  src: url("../fonts/Roboto-Light.ttf") format("truetype");
-}
-
 * {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
@@ -48,60 +10,47 @@ body {
 
 /*Header*/
 
-header {
-  position: fixed;
-  z-index: 99;
-}
-
-.navbar {
+.header {
   position: relative;
 
-  width: 90rem;
-  height: 5rem;
-  margin: 0 2.5rem;
+  height: 100vh;
+  width: 100%;
 
-  background-color: #8c8033;
+  background-image: url(../images/item-1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.navbar__menu {
-  position: absolute;
+.nav {
+  display: flex;
+  padding: 1rem 2rem;
 
-  margin-top: 1.5rem;
-  margin-left: 43rem;
+  justify-content: space-between;
 }
 
-.navbar__logo {
-  font-size: 2rem;
-  font-family: "Raleway Italic";
-
-  color: white;
+.nav__header {
+  padding: 1rem;
 }
 
-.navbar__header {
-  position: absolute;
-
-  margin-top: 1.2rem;
-  margin-left: 2rem;
+.nav__list {
+  flex-grow: 1;
+  text-align: right;
 }
 
-.navbar__links {
-  display: inline;
-  margin-left: 9rem;
+.nav__item {
+  position: relative;
+
+  display: inline-block;
+  padding: 1.25rem 0.75rem;
+
+  list-style: none;
 }
 
-.navbar__link {
-  color: white;
+.nav__link {
+  text-decoration: none;
 }
 
 /*About Us Section*/
-
-.about-us__img {
-  width: 90rem;
-  height: 48rem;
-
-  display: block;
-  margin: 0 auto;
-}
 
 .about-us__header {
   position: absolute;
@@ -112,19 +61,13 @@ header {
   margin-top: 10rem;
   margin-left: 10rem;
 
-  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgba(140, 128, 51, 0.7) 24%,
+    rgba(40, 40, 40, 0.7) 76%
+  );
 
   text-align: center;
-}
-
-.about-us__logo {
-  width: 35rem;
-
-  margin-top: 1rem;
-
-  color: white;
-  font-size: 3.5rem;
-  font-family: "Raleway Bold";
 }
 
 .about-us__section-description {
@@ -136,23 +79,5 @@ header {
   margin-top: 22rem;
   margin-left: 10rem;
 
-  background-color: #8c8033;
-}
-
-.about-us__description {
-  width: 40rem;
-
-  margin: 0.5rem 1.5rem;
-
-  color: white;
-
-  font-size: 1.75rem;
-  font-family: "Raleway Italic";
-}
-
-/*Products Section*/
-
-.products__img {
-  width: 20rem;
-  height: 25rem;
+  background: rgba(0, 0, 0, 0.5);
 }
