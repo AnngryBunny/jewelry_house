@@ -1,0 +1,15 @@
+@media (max-width: 780px) {
+  /*Header*/
+
+  .nav__list {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /*Header*/
+
+  .nav__list {
+    display: none;
+  }
+}

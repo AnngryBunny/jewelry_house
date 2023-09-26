@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-body {
-  font-size: 1.2rem;
-  font-family: "Roboto Light", serif;
-}
-
 /*Header*/
 
 .header {
@@ -22,7 +17,11 @@ body {
 }
 
 .nav {
+  z-index: 99;
+  position: fixed;
+
   display: flex;
+  width: 100%;
   padding: 1rem;
 
   justify-content: space-between;
@@ -43,7 +42,7 @@ body {
   position: relative;
 
   display: inline-block;
-  padding: 1.25rem 0.75rem;
+  padding: 1.25rem 2rem;
 
   list-style: none;
 }
@@ -94,7 +93,6 @@ body {
 
   width: 35rem;
   height: 5rem;
-
   margin-top: 22rem;
   margin-left: 10rem;
 
