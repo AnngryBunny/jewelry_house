@@ -6,15 +6,21 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/mediaQueries.css" rel="stylesheet" />
+    <script src="js/script.js" async></script>
     <title>Jewelry House</title>
   </head>
   <body>
     <!--- Header -->
     <header class="header">
       <!--- Nav -->
-      <nav class="nav">
+      <div class="nav">
         <h1 class="nav__header">Jewelry House Logo</h1>
-        <div class="nav__list">
+
+        <nav class="nav__list">
+          <button class="nav__burger-btn nav__burger-btn--is-active">
+            <div class="nav__btn nav__btn--is-active"></div>
+          </button>
+
           <ul class="nav__links">
             <li class="nav__link">
               <a href="#about-us" class="nav__hyperlink">ПРО НАС</a>
@@ -32,8 +38,8 @@
               <a href="#contacts" class="nav__hyperlink">КОНТАКТИ</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!--- End of Nav -->
 
       <!--- About Us -->
