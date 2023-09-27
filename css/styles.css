@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+
+  scroll-behavior: smooth;
 }
 
 /*Header*/
@@ -35,10 +37,11 @@
 
 .nav__list {
   flex-grow: 1;
+
   text-align: right;
 }
 
-.nav__links {
+.nav__link {
   position: relative;
 
   display: inline-block;
@@ -47,7 +50,11 @@
   list-style: none;
 }
 
-.nav__link::after {
+.nav__hyperlink {
+  text-decoration: none;
+}
+
+.nav__hyperlink::after {
   content: "";
 
   width: 0%;
@@ -60,12 +67,8 @@
   transition: 0.5s;
 }
 
-.nav__link:hover:after {
+.nav__hyperlink:hover:after {
   width: 100%;
-}
-
-.nav__link {
-  text-decoration: none;
 }
 
 /*About Us Section*/
@@ -97,4 +100,6 @@
   margin-left: 10rem;
 
   background: rgba(0, 0, 0, 0.5);
+
+  text-align: center;
 }
