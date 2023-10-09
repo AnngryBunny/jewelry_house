@@ -22,10 +22,8 @@
   z-index: 99;
   position: fixed;
 
-  display: flex;
   width: 100%;
   padding: 1rem;
-  justify-content: space-between;
 
   background-color: #847a41;
 }
@@ -70,19 +68,23 @@
   width: 100%;
 }
 
+/* Burger Menu */
+
 .nav__burger-btn {
   position: relative;
+  z-index: 99;
 
-  display: block;
+  display: none;
   width: 2.5rem;
   height: 2.5rem;
-  margin-left: 10rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 
   background: none;
   border: none;
 
   cursor: pointer;
+
+  justify-content: end;
 }
 
 .nav__btn,
@@ -99,15 +101,15 @@
   transition: 0.5s;
 }
 
-.nav__burger-btn--is-active::before {
-  transform: rotate(-45deg) translate(-1.5rem, 1.1rem);
+.nav__burger-btn--is-active::after {
+  transform: rotate(-45deg) translate(0.4rem, -0.8rem);
 }
 
-.nav__burger-btn--is-active::after {
+.nav__burger-btn--is-active::before {
   transform: rotate(45deg) translate(0.2rem, 0.5rem);
 }
 
-.nav__btn--is-active {
+.nav__burger-btn--is-active .nav__btn {
   opacity: 0;
 }
 

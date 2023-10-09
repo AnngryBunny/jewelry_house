@@ -10,11 +10,17 @@
       url(../images/item-1.jpg);
   }
 
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .nav__list {
     position: absolute;
     top: 0;
     right: 0;
 
+    display: none;
     width: 13rem;
     height: 22rem;
     margin-right: 2rem;
@@ -28,8 +34,12 @@
     );
   }
 
+  .nav__list--is-active {
+    display: block;
+  }
+
   .nav__links {
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   .nav__link {
@@ -59,5 +69,17 @@
     font-size: 1.5rem;
 
     background: none;
+  }
+
+  /*Burger Menu*/
+
+  .nav__container-btn {
+    display: grid;
+    width: 90%;
+    justify-content: end;
+  }
+
+  .nav__burger-btn {
+    display: block;
   }
 }
