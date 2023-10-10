@@ -17,7 +17,6 @@
 
     display: none;
     width: 13rem;
-    height: 22rem;
 
     text-align: center;
 
@@ -33,15 +32,15 @@
   }
 
   .nav__links {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   .nav__link {
     display: block;
   }
 
-  .nav__hyperlink {
-    color: white;
+  .nav__hyperlink:hover:after {
+    width: 70%;
   }
 
   /*About Us Section*/

@@ -60,6 +60,7 @@
 }
 
 .nav__hyperlink {
+  color: white;
   text-decoration: none;
 }
 
@@ -70,8 +71,9 @@
   height: 0.2rem;
   display: block;
   margin: auto;
+  margin-top: 0.2rem;
 
-  background-color: red;
+  background-color: white;
 
   transition: 0.5s;
 }
