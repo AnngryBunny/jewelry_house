@@ -22,18 +22,30 @@
   z-index: 99;
   position: fixed;
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 1rem;
+  grid-auto-rows: minmax(1rem, auto);
+
   width: 100%;
-  padding: 1rem;
 
   background-color: #847a41;
 }
 
 .nav__header {
+  grid-column: 1 / 2;
+  grid-row: 1;
+
   padding: 1rem;
+  margin-left: 1rem;
 }
 
 .nav__list {
-  flex-grow: 1;
+  grid-column: 2 / 2;
+  grid-row: 1;
+
+  padding: 1rem;
+  margin-top: 1rem;
 
   text-align: right;
 }
@@ -70,6 +82,10 @@
 
 /* Burger Menu */
 
+.nav__container-btn {
+  display: none;
+}
+
 .nav__burger-btn {
   position: relative;
   z-index: 99;
@@ -95,14 +111,14 @@
   height: 0.15rem;
   margin: 0.5rem 0;
 
-  background-color: white;
+  background-color: #000;
 
   content: "";
   transition: 0.5s;
 }
 
 .nav__burger-btn--is-active::after {
-  transform: rotate(-45deg) translate(0.4rem, -0.8rem);
+  transform: rotate(-45deg) translate(0.4rem, -0.7rem);
 }
 
 .nav__burger-btn--is-active::before {
