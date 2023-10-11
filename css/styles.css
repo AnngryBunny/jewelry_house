@@ -177,7 +177,7 @@
 .products__left {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(10rem, auto);
+  grid-auto-rows: minmax(15rem, auto);
   gap: 1.5rem;
 
   width: 100%;
@@ -188,7 +188,6 @@
 .products__right {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(6.25rem, auto);
   gap: 1.5rem;
 
   width: 83%;
@@ -196,56 +195,154 @@
   margin: 2rem 1rem 0 3.5rem;
 }
 
-.products__necklace {
+.products__item-1 {
+  position: relative;
+
   grid-column: 1;
   grid-row: 1/3;
+  padding-bottom: 5rem;
+}
+
+.products__necklace {
+  width: 100%;
+  height: 100%;
 
   background-image: url(../images/necklace.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.products__brooch {
+.products__item-2 {
+  position: relative;
+
   grid-column: 2;
   grid-row: 1/3;
+  padding-bottom: 5rem;
+}
+
+.products__brooch {
+  width: 100%;
+  height: 100%;
 
   background-image: url(../images/brooch.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.products__set {
+.products__item-3 {
+  position: relative;
+
   grid-column: 1/3;
   grid-row: 3/5;
+  padding-bottom: 5rem;
+}
+
+.products__set {
+  width: 100%;
+  height: 100%;
 
   background-image: url(../images/set.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.products__ring {
+.products__item-4 {
+  position: relative;
+
   grid-column: 1;
   grid-row: 1;
+  padding-bottom: 5rem;
+}
+
+.products__ring {
+  width: 100%;
+  height: 100%;
 
   background-image: url(../images/ring.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.products__bracelet {
+.products__item-5 {
+  position: relative;
+
   grid-column: 1;
   grid-row: 2;
+  padding-bottom: 5rem;
+}
+
+.products__bracelet {
+  width: 100%;
+  height: 100%;
 
   background-image: url(../images/bracelet.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.products__earrings {
+.products__item-6 {
+  position: relative;
+
   grid-column: 1;
   grid-row: 3;
+  padding-bottom: 5rem;
+}
+
+.products__earrings {
+  width: 100%;
+  height: 100%;
 
   background-image: url(../images/earrings.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.products__btn {
+  position: absolute;
+
+  width: 100%;
+
+  background-color: #847a41;
+
+  border: none;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.products__btn:hover {
+  background-color: #ffff;
+}
+
+.products__left .products__btn {
+  height: 16%;
+}
+
+.products__right .products__btn {
+  height: 25%;
+}
+
+.products__btn-name {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #ffff;
+}
+
+.products__btn:hover .products__btn-name {
+  color: #847a41;
+}
+
+.products__btn-name::after {
+  position: absolute;
+  right: 1;
+
+  width: 5%;
+  height: 0.2rem;
+  display: block;
+  margin-left: 70%;
+  margin-bottom: 1rem;
+
+  background-color: white;
+
+  content: "";
+  transform: rotate(-45deg) translate(0.4rem, -0.7rem);
 }
