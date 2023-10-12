@@ -19,7 +19,11 @@ body {
   text-align: center;
   color: #fff;
 
-  background-color: var(--main-color);
+  background: linear-gradient(
+    90deg,
+    var(--main-color) 24%,
+    rgba(40, 40, 40, 0.7) 76%
+  );
 }
 
 /*Header*/
@@ -36,8 +40,8 @@ body {
 }
 
 .nav {
-  z-index: 99;
   position: fixed;
+  z-index: 99;
 
   display: grid;
   grid-template-columns: auto auto;
@@ -45,6 +49,7 @@ body {
   gap: 1rem;
 
   width: 100%;
+  padding-bottom: 0.5rem;
 
   align-items: center;
 
@@ -53,7 +58,6 @@ body {
 
 .nav__header {
   padding: 1rem;
-  margin-left: 1rem;
 
   color: #fff;
 }
@@ -163,9 +167,11 @@ body {
   height: 10rem;
 
   margin-top: 10rem;
-  margin-left: 10rem;
+  margin-left: 7rem;
 
   text-align: center;
+  font-size: 2rem;
+  color: #fff;
 
   background: linear-gradient(
     90deg,
@@ -174,17 +180,29 @@ body {
   );
 }
 
+.about-us__logo {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
 .about-us__section-description {
   position: absolute;
 
   width: 35rem;
   height: 5rem;
   margin-top: 22rem;
-  margin-left: 10rem;
+  margin-left: 7rem;
 
   text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
 
   background: rgba(0, 0, 0, 0.5);
+}
+
+.about-us__description {
+  margin-top: 0.75rem;
 }
 
 /*Products Section*/
@@ -204,8 +222,7 @@ body {
   gap: 1.5rem;
 
   width: 100%;
-
-  margin: 2rem 1rem 0 2rem;
+  margin: 2rem 0 0 -0.7rem;
 }
 
 .products__right {
@@ -213,9 +230,8 @@ body {
   grid-template-columns: 1fr;
   gap: 1.5rem;
 
-  width: 83%;
-
-  margin: 2rem 1rem 0 3.5rem;
+  width: 100%;
+  margin: 2rem 0 0 0.8rem;
 }
 
 .products__item-1 {
