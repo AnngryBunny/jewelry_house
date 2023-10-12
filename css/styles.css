@@ -8,7 +8,7 @@
 /*Common*/
 
 body {
-  background-color: #847a41;
+  background-color: #fff;
 }
 
 .semi-header {
@@ -17,9 +17,9 @@ body {
   font-size: 1.75rem;
   text-transform: uppercase;
   text-align: center;
-  color: #000;
+  color: #fff;
 
-  background-color: #e8e9e1;
+  background-color: var(--main-color);
 }
 
 /*Header*/
@@ -40,45 +40,51 @@ body {
   position: fixed;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0 1rem;
+  grid-template-columns: auto auto;
   grid-auto-rows: minmax(1rem, auto);
+  gap: 1rem;
 
   width: 100%;
 
-  background-color: #847a41;
+  align-items: center;
+
+  background-color: var(--main-color);
 }
 
 .nav__header {
-  grid-column: 1 / 2;
-  grid-row: 1;
-
   padding: 1rem;
   margin-left: 1rem;
+
+  color: #fff;
 }
 
 .nav__list {
-  grid-column: 2 / 2;
-  grid-row: 1;
-
-  padding: 1rem;
+  display: grid;
+  justify-content: right;
   margin-top: 1rem;
+}
 
-  text-align: right;
+.nav__links {
+  display: grid;
+  grid-template-columns: repeat(4, 10rem);
+
+  text-align: center;
 }
 
 .nav__link {
-  position: relative;
-
-  display: inline-block;
-  padding: 0 2rem 2rem 2rem;
-
   list-style: none;
+
+  font-size: 1.2rem;
 }
 
 .nav__hyperlink {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__hyperlink:hover {
+  color: #000;
 }
 
 .nav__hyperlink::after {
@@ -90,13 +96,13 @@ body {
   margin: auto;
   margin-top: 0.2rem;
 
-  background-color: white;
+  background-color: #000;
 
-  transition: 0.5s;
+  transition: 0.75s;
 }
 
 .nav__hyperlink:hover:after {
-  width: 100%;
+  width: 70%;
 }
 
 /* Burger Menu */
@@ -163,7 +169,7 @@ body {
 
   background: linear-gradient(
     90deg,
-    rgba(140, 128, 51, 0.7) 24%,
+    var(--main-color) 24%,
     rgba(40, 40, 40, 0.7) 76%
   );
 }
@@ -321,7 +327,7 @@ body {
 
   width: 100%;
 
-  background-color: #847a41;
+  background-color: var(--main-color);
 
   border: none;
   cursor: pointer;
@@ -367,9 +373,9 @@ body {
 }
 
 .products__btn:hover .products__btn-name {
-  color: #847a41;
+  color: var(--main-color);
 }
 
 .products__btn:hover .products__arrow-icon {
-  fill: #847a41;
+  fill: var(--main-color);
 }
