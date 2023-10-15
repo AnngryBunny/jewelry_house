@@ -19,7 +19,7 @@
     right: 0;
 
     display: none;
-    width: 13rem;
+    width: 18rem;
 
     text-align: center;
 
@@ -52,7 +52,7 @@
 
   /*About Us Section*/
 
-  .about-us__header {
+  .master__header {
     width: 90%;
     top: 10%;
     right: 5%;
@@ -62,7 +62,7 @@
     background: none;
   }
 
-  .about-us__section-description {
+  .master__section-description {
     width: 75%;
     right: 12%;
 

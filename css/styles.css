@@ -34,7 +34,7 @@ body {
   height: 100vh;
   width: 100%;
 
-  background-image: url(../images/item-1.jpg);
+  background-image: url(../images/master__img.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -70,7 +70,7 @@ body {
 
 .nav__links {
   display: grid;
-  grid-template-columns: repeat(4, 10rem);
+  grid-template-columns: repeat(5, 10rem);
 
   text-align: center;
 }
@@ -160,7 +160,7 @@ body {
 
 /*About Us Section*/
 
-.about-us__header {
+.master__header {
   position: absolute;
 
   width: 35rem;
@@ -180,13 +180,13 @@ body {
   );
 }
 
-.about-us__logo {
+.master__logo {
   width: 80%;
   margin: 0 auto;
   margin-top: 1.5rem;
 }
 
-.about-us__section-description {
+.master__section-description {
   position: absolute;
 
   width: 35rem;
@@ -201,7 +201,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.about-us__description {
+.master__description {
   margin-top: 0.75rem;
 }
 
@@ -394,4 +394,17 @@ body {
 
 .products__btn:hover .products__arrow-icon {
   fill: var(--main-color);
+}
+
+/*FAQ Section*/
+
+.faq__arrow-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  fill: var(--main-color);
+}
+
+.faq__img {
+  width: 10rem;
 }
