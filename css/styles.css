@@ -473,13 +473,13 @@ body {
 .faq__header {
   margin-top: 0.1rem;
 
-  font-weight: 600;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .faq__arrow-icon {
-  width: 5vw;
-  height: 5vh;
+  width: 2vw;
+  height: 2vh;
 
   fill: var(--main-color);
 }
@@ -491,4 +491,16 @@ body {
   font-size: 1.2rem;
   text-indent: 1.2rem;
   text-align: justify;
+}
+
+.faq__item--is-active .faq__info {
+  display: block;
+}
+
+.faq__item--is-active .faq__header {
+  font-weight: 600;
+}
+
+.faq__item--is-active .faq__arrow-icon {
+  transform: rotate(180deg);
 }
